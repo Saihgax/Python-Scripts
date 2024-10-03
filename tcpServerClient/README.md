@@ -1,4 +1,4 @@
-## How To Run
+# How To Run
 
 1. Start the server
     - Run the **tcp_server.py** script. The server will start listening on port 8080.
@@ -7,7 +7,6 @@
 2. Start the client
     - Run the **tcp_client.py** script to connect to the server, send the message, and receive the server's response.
     - Example command: python tcp_client.py
-
 
 ## Expected Output
 
@@ -24,4 +23,3 @@
     ```python
     Received from server: Hello, Client!
     ```
-    
