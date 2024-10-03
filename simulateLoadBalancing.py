@@ -1,3 +1,4 @@
+from pprint import pprint
 '''
 You are given a list of servers and each server 
 has a server_id and a capacity (the maximum number of requests 
@@ -30,8 +31,14 @@ def distribute_requests(servers, requests):
         
         # Move to the next server in a round-robin fashion
         i = (i + 1) % len(servers)
-    
+
     return assigned_requests
+'''
+The expression i = (i + 1) % len(servers) allows the algorithm to:
+
+- Move to the next server in the list.
+- Start over from the first server when it reaches the end, enabling a round-robin distribution.
+'''
 
 # Example servers and requests
 servers = [
@@ -44,4 +51,9 @@ requests = ["req1", "req2", "req3", "req4", "req5", "req6"]
 
 # Call the function and print the result
 result = distribute_requests(servers, requests)
-print(result)
+pprint(result)
+
+
+'''
+{'s1': ['req1', 'req4'], 's2': ['req2', 'req5', 'req6'], 's3': ['req3']}
+'''
