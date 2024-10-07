@@ -2,7 +2,6 @@
 Write a function to analyze disk space usage on a server. 
 Given a list of dictionaries with each dictionary containing filesystem, size, used, and available, 
 calculate the total disk space used and the percentage used per filesystem.
-
 '''
 
 

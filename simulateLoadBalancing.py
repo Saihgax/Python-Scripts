@@ -1,4 +1,3 @@
-from pprint import pprint
 '''
 You are given a list of servers and each server 
 has a server_id and a capacity (the maximum number of requests 
@@ -8,6 +7,8 @@ incoming requests to the servers in a round-robin fashion.
 If a server's capacity is full, the next server should 
 handle the request.
 '''
+from pprint import pprint
+
 def distribute_requests(servers, requests):
     # Create a dictionary to store the assigned requests for each server
     assigned_requests = {server['server_id']: [] for server in servers}

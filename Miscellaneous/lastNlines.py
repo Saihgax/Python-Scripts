@@ -5,7 +5,6 @@ def lastNline(fname, N):
             print(line, end = '')
 
 
-
 if __name__ == '__main__':
     fname = 'file.txt'
     N = 3
